@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Website Rescue case study: a self-initiated responsive layout repair for fictional studio Fable Spaces, with real screenshots, working demos and verified test results.">
+  <meta name="theme-color" content="#243e35">
+  <title>Fable Spaces responsive repair · Website Rescue</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to case study</a>
+  <header class="site-header wrap">
+    <a class="wordmark" href="./" aria-label="Website Rescue home"><span class="brand-mark" aria-hidden="true">↗</span> Website Rescue<span class="brand-dot" aria-hidden="true">.</span></a>
+    <nav aria-label="Case study navigation">
+      <a href="#comparison">Before &amp; after</a>
+      <a href="#verification">Verification</a>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero wrap" aria-labelledby="title">
+      <div>
+        <p class="eyebrow">CASE STUDY 001 / RESPONSIVE REPAIR</p>
+        <h1 id="title">A thoughtful space.<br>A website that <em>fits.</em></h1>
+        <p class="intro">Repairing a desktop-only layout so a fictional interior studio feels just as considered on a small screen.</p>
+        <div class="actions">
+          <a class="button primary" href="demos/after/">Explore the repaired demo <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="demos/before/">Open the broken demo <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <aside class="project-note" aria-label="Project context">
+        <span class="note-index" aria-hidden="true">01 /</span>
+        <h2>A demonstration,<br>with real evidence.</h2>
+        <p>This is a <strong>self-initiated demonstration project</strong>. Fable Spaces is fictional. This was not commissioned by a client.</p>
+        <dl>
+          <div><dt>Focus</dt><dd>Layout repair &amp; accessibility</dd></div>
+          <div><dt>Built with</dt><dd>HTML, CSS &amp; JavaScript</dd></div>
+          <div><dt>Approach</dt><dd>Preserve the visual identity</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="comparison wrap" id="comparison" aria-labelledby="comparison-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">01 / THE DIFFERENCE</p><h2 id="comparison-title">Same design. More room to work.</h2></div>
+        <p>Actual browser captures from these demos.<br>Both mobile views: 390 × 844 CSS pixels.</p>
+      </div>
+      <div class="comparison-grid">
+        <figure class="capture before">
+          <figcaption><span class="capture-label">BEFORE</span><h3>A desktop layout on a phone</h3><p>Fixed widths push navigation, text and artwork beyond the viewport.</p></figcaption>
+          <div class="capture-stage"><a href="assets/before-mobile.png" aria-label="Open full-size before mobile screenshot"><img src="assets/before-mobile.png" width="390" height="844" alt="Original Fable Spaces at 390 pixels wide: the heading is cut off at the right edge and desktop navigation is out of view." fetchpriority="high"></a></div>
+          <a class="capture-link" href="demos/before/">Try the intentionally broken version <span aria-hidden="true">↗</span></a>
+        </figure>
+        <figure class="capture after">
+          <figcaption><span class="capture-label">AFTER</span><h3>A layout that adapts</h3><p>Readable text, a working mobile menu and artwork that fits the screen.</p></figcaption>
+          <div class="capture-stage"><a href="assets/after-mobile.png" aria-label="Open full-size after mobile screenshot"><img src="assets/after-mobile.png" width="390" height="844" alt="Repaired Fable Spaces at 390 pixels wide: the complete heading, services button, menu toggle and room illustration fit within the viewport." fetchpriority="high"></a></div>
+          <a class="capture-link" href="demos/after/">Try the repaired version <span aria-hidden="true">↗</span></a>
+        </figure>
+      </div>
+      <p class="evidence-note">Captured over local HTTP on 30 October 2026 using Chromium. These are viewport screenshots, not mockups; the broken version’s off-screen content stays off-screen. The original demo also retains its broken section links and placeholder contact action.</p>
+      <details class="desktop-evidence">
+        <summary>Inspect the desktop comparison <span>1440 × 1000 px</span></summary>
+        <div class="desktop-grid">
+          <figure><figcaption>Before / desktop</figcaption><a href="assets/before-desktop.png"><img src="assets/before-desktop.png" width="1440" height="1000" alt="Original desktop layout with a two-column hero and interior illustration." loading="lazy"></a></figure>
+          <figure><figcaption>After / desktop</figcaption><a href="assets/after-desktop.png"><img src="assets/after-desktop.png" width="1440" height="1000" alt="Repaired desktop layout retaining the original palette, two-column hero and interior illustration." loading="lazy"></a></figure>
+        </div>
+      </details>
+    </section>
+
+    <section class="repair wrap" aria-labelledby="repair-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / THE REPAIR</p><h2 id="repair-title">Find the cause. Fix the details.</h2></div><p>A focused repair of an existing page,<br>without a framework or a full redesign.</p></div>
+      <div class="repair-grid">
+        <article><span class="step" aria-hidden="true">01</span><h3>Let the layout breathe</h3><p>The original enforced 1100–1120px minimum widths and fixed hero columns. Fluid containers, shrinkable grids and responsive type bring the content back into the viewport.</p></article>
+        <article><span class="step" aria-hidden="true">02</span><h3>Make navigation usable</h3><p>A mobile menu replaces the crowded desktop navigation. The repair adds keyboard focus recovery, Escape and outside-click dismissal, and navigation that still works without JavaScript.</p></article>
+        <article><span class="step" aria-hidden="true">03</span><h3>Finish what users notice</h3><p>Darker text improves contrast. Links reach the right sections. Enlarged text wraps, decorative artwork stays out of the accessibility tree, and spacing remains consistent.</p></article>
+      </div>
+    </section>
+
+    <section class="verification" id="verification" aria-labelledby="verification-title">
+      <div class="wrap verification-inner">
+        <div><p class="eyebrow">03 / VERIFIED, WITH LIMITS</p><h2 id="verification-title">Evidence over<br>big promises.</h2><p>The repaired demo passed <strong>88 browser assertions across 11 viewport widths</strong>, from 320 to 1920px, in the earlier local-file test run.</p><p>The case study and its demo copies were also checked over HTTP under a project subpath. These checks confirm behavior in the tested browser; they do not establish complete accessibility or device compatibility.</p></div>
+        <div class="verification-details">
+          <ul class="check-list">
+            <li><strong>Responsive layout</strong><span>No horizontal overflow in the repaired demo at the tested widths; the original mobile overflow was reproduced.</span></li>
+            <li><strong>Navigation &amp; keyboard</strong><span>Menu state, Escape, focus recovery, anchor targets and JavaScript-disabled navigation checked.</span></li>
+            <li><strong>Readability &amp; reflow</strong><span>Text contrast, reduced motion, enlarged text and increased spacing checked in the repaired demo.</span></li>
+            <li><strong>This case study</strong><span>Local assets and links checked under a project subpath, with mobile and desktop layout checks.</span></li>
+          </ul>
+          <p class="test-limits">Not tested on physical devices, Safari, Firefox or a screen reader. No full axe audit, conversion study or performance score is claimed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing wrap" aria-labelledby="closing-title">
+      <p class="eyebrow">WEBSITE RESCUE / WHAT THIS SHOWS</p>
+      <h2 id="closing-title">A small repair can make<br>a page easier to use.</h2>
+      <p>This exercise demonstrates diagnosis, responsive CSS, accessible interaction and documented testing. It makes no claims about paid client work or business results.</p>
+      <a class="button primary" href="demos/after/">Take a closer look <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><p>Website Rescue <span aria-hidden="true">/</span> Case study 001</p><p>Self-initiated demonstration · Fictional studio · 2026</p></footer>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A self-initiated website repair demo: a responsive, accessible landing page for fictional interior studio Fable Spaces.">
+  <title>Fable Spaces — Responsive Layout Repair</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="notice">PORTFOLIO DEMO • RESPONSIVE LAYOUT REPAIR</div>
+  <a class="skip-link" href="#top">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#top">FABLE<span>SPACES</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation" hidden>
+      <span aria-hidden="true">☰</span>
+    </button>
+    <nav id="primary-nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#work">Our process</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="nav-cta">Contact →</a>
+    </nav>
+  </header>
+  <main id="top" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <div class="eyebrow">THOUGHTFUL SPACES · EVERYDAY LIVING</div>
+        <h1 id="hero-heading">Design a space that <em>feels like you.</em></h1>
+        <p>Simple, warm interior styling that gives every corner a little more meaning.</p>
+        <a class="btn" href="#services">Explore our services ↗</a>
+        <div class="trust">Spaces that are calm, functional, and personal.</div>
+      </div>
+      <div class="room-art" aria-hidden="true">
+        <div class="art-window"></div>
+        <div class="art-painting"></div>
+        <div class="art-sofa"></div>
+        <div class="art-table"></div>
+        <div class="art-vase"></div>
+      </div>
+    </section>
+    <section class="section" id="services" tabindex="-1" aria-labelledby="services-heading">
+      <div class="eyebrow">HOW WE HELP</div>
+      <h2 id="services-heading">Good design, made approachable.</h2>
+      <div class="services">
+        <article>
+          <span>01 /</span>
+          <h3>Space refresh</h3>
+          <p>Refine your space with a new layout, color palette, and finishing details.</p>
+        </article>
+        <article>
+          <span>02 /</span>
+          <h3>Room planning</h3>
+          <p>A practical plan for how your room looks, flows, and works day to day.</p>
+        </article>
+        <article>
+          <span>03 /</span>
+          <h3>Styling advice</h3>
+          <p>Thoughtful guidance on materials, lighting, furniture, and decor.</p>
+        </article>
+      </div>
+    </section>
+    <section class="section" id="work" tabindex="-1" aria-labelledby="work-heading">
+      <div class="eyebrow">THE DESIGN PROCESS</div>
+      <h2 id="work-heading">A simple plan, from ideas to details.</h2>
+      <p>A fictional example of a service workflow: understand the space, outline priorities, and refine the finishing touches.</p>
+    </section>
+    <section class="section" id="about" tabindex="-1" aria-labelledby="about-heading">
+      <div class="eyebrow">ABOUT THE DEMO</div>
+      <h2 id="about-heading">Thoughtful design, welcoming spaces.</h2>
+      <p>This is a fictional business created for a front-end repair exercise. It is not an actual studio or client testimonial.</p>
+    </section>
+    <section class="contact" id="contact" tabindex="-1" aria-labelledby="contact-heading">
+      <div>
+        <span class="eyebrow">YOUR NEXT CHAPTER</span>
+        <h2 id="contact-heading">Make room for better living.</h2>
+        <p class="contact-note" id="contact-note">Portfolio demo only. No consultations or inquiries are collected.</p>
+      </div>
+      <a class="btn dark" href="#about" aria-describedby="contact-note">About this demo ↗</a>
+    </section>
+  </main>
+  <footer>FABLE SPACES · Fictional portfolio demonstration, not a real client project.</footer>
+</body>
+</html>
